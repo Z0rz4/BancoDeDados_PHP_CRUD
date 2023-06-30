@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="shortcut icon" href=img/elephant"" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+    color: #ffffff;
+    font-family: 'Bangers', cursive;
+}
+
+
+/*Container principal*/
+.principal{
+    height: 60%;
+    width: 30%;
+    background: rgba( 2, 2, 2, 0.25 );
+    box-shadow: 0 0px 30px 0 #00fff263;
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid 00fff263;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+/*Sessão da logo*/
+.foto {
+
+    width: 120px;
+    height: 100px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.logo{
+
+    background-color: #131313;
+    margin: auto;
+    border-radius:100% ;
+    width: 120px;
+    height: 120px;
+    box-shadow: black 5px 10px 30px 2px;
+    animation: elephant 2s ease infinite alternate;
+}
+
+@keyframes elephant {
+    from {
+        box-shadow: 0 0px 32px 0 #131313;
+    }
+    to {
+        box-shadow: 0px 0px 5px 2px #00fff263;
+    }
+}
+
+/*Sessão dos botoes*/
+button{
+display: block;
+height: 40px;
+width: 100px;
+margin: 10px;
+border: 0;
+box-shadow: black 5px 10px 30px 2px;
+border-radius: 20px;
+background-color: #282828;
+color: #ffffff;
+font-family: 'Bangers', cursive;
+}
+
+
+
+.botoes {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    color: green;
+}
+
+.github{
+    border-radius: 100%;
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.github:hover{
+    transition: 1s;
+    box-shadow: #ffffff 0px 0px 15px;
+}
+    </style>
+</head>
+<body>
+
+
+<div class="principal">
+    <div class="foto">
+        <img src="img/php.png" class="logo">
+    </div>
+    <div class="container">
+        <section>
+            <h1>Bem-vindo</h1>
+        </section>
+        <section class="botoes">
+        <button> <a href="cadastro.php">Cadastrar</a></button>
+        <button><a href="listar.php">Listar</a></button>
+        </section> 
+    </div>
+    <div class="icone">
+        <a href="https://github.com/Z0rz4" target="_blank"><img src="img/github.png" class="github" alt=""></a>
+    </div>
+</div>
+
+
+</body>
+</html>
